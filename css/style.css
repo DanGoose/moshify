@@ -6,7 +6,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
-  --border-radius: 30px;
+  --border-radius: 500px;
 }
 
 *,
@@ -202,11 +202,19 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  text-align: center;
-  margin: 1rem 0;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -283,13 +291,12 @@ a {
   border: solid 1px var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
-  box-shadow: 0px 15px 60px 0px rgba(9, 58, 88, 0.15);
 }
 
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 3rem;
 }
 
 .input-group .btn {
@@ -705,4 +712,30 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Domain Block */
+
+.block-domain .input-group {
+  box-shadow: 0px 15px 60px 0px rgba(9, 58, 88, 0.15);
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  place-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+  }
 }
