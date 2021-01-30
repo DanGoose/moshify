@@ -767,3 +767,23 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* Features block */
+.feature {
+  gap: 4rem 2rem;
+  margin: 5rem 0 12rem;
+}
+
+.feature__img {
+  width: 100%;
+}
+
+.feature .media__title {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .media {
+    order: 2;
+  }
+}
