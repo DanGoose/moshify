@@ -1,3 +1,5 @@
+import AOS from 'aos';
+
 document.querySelector('.nav__toggler').addEventListener('click', function () {
   this.parentElement.classList.toggle('collapsible--expanded');
 });
@@ -9,3 +11,7 @@ collapsibles.forEach((item) =>
     this.parentElement.classList.toggle('collapsible--expanded');
   })
 );
+
+AOS.init({
+  duration: 500,
+});
