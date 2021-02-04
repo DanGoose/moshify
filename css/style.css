@@ -651,8 +651,10 @@ a {
 }
 
 /* Navigation Bar */
-.nav {
+.nav--dark {
   background: black;
+}
+.nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -746,6 +748,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 /* Domain Block */

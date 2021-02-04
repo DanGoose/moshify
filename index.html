@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav collapsible">
+    <header class="nav--dark">
+        <nav class="nav collapsible container">
             <a href="#" class="nav__brand"><img src="images/logo.svg" alt=""></a>
 
 
@@ -35,19 +35,19 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--cols-2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading" data-aos="fade-up">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
                 <a href="" class="btn btn--accent btn--stretched">get started</a>
             </header>
             <picture>
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
                 <source type="image/png" srcset="images/banner.png  1x, images/banner@2x.png 2x">
-                <img class="hero__image" src="images/banner.png" alt="">
+                <img class="hero__image" data-aos="zoom-in" src="images/banner.png" alt="">
             </picture>
         </div>
     </section>
 
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-down">
         <header class="block__header">
             <h2>Starting at $9 per month</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis?</p>
@@ -70,7 +70,7 @@
         </ul>
     </section>
 
-    <div class="block container grid grid--cols-3 block-plans">
+    <div class="block container grid grid--cols-3 block-plans" data-aos="fade-up">
         <div class="plan">
             <div class="card card--secondary">
                 <header class="card__header ">
@@ -152,7 +152,7 @@
         <article class="grid grid--cols-2 feature">
 
             <div class="media">
-                <div class="media__body">
+                <div class="media__body" data-aos="fade-right">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#easy"></use>
@@ -171,7 +171,7 @@
                 </div>
             </div>
 
-            <img class="feature__img" src="images/easy.jpg" alt="">
+            <img class="feature__img" src="images/easy.jpg" alt="" data-aos="fade-left">
 
         </article>
 
@@ -179,7 +179,7 @@
 
             <div class="media">
 
-                <div class="media__body">
+                <div class="media__body" data-aos="fade-left">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#computer"></use>
@@ -200,7 +200,7 @@
 
             </div>
 
-            <img class="feature__img" src="images/fast.jpg" alt="">
+            <img class="feature__img" src="images/fast.jpg" alt="" data-aos="fade-right">
 
         </article>
 
@@ -208,7 +208,7 @@
 
             <div class="media">
 
-                <div class="media__body">
+                <div class="media__body" data-aos="fade-right">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#settings"></use>
@@ -229,7 +229,7 @@
 
             </div>
 
-            <img class="feature__img" src="images/wordpress.jpg" alt="">
+            <img class="feature__img" src="images/wordpress.jpg" alt="" data-aos="fade-left">
 
         </article>
 
@@ -237,7 +237,7 @@
 
             <div class="media">
 
-                <div class="media__body">
+                <div class="media__body" data-aos="fade-left">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#clock"></use>
@@ -258,7 +258,7 @@
 
             </div>
 
-            <img class="feature__img" src="images/support.jpg" alt="">
+            <img class="feature__img" src="images/support.jpg" alt="" data-aos="fade-right">
 
         </article>
     </section>
@@ -269,8 +269,8 @@
             <h2 class="block__heading">User-Friendly Control Panel</h2>
         </header>
         <div class="container grid grid--cols-2 showcase">
-            <img class="showcase__img" src="images/ipad.png" alt="">
-            <div class="showcase__features">
+            <img class="showcase__img" src="images/ipad.png" alt="" data-aos="fade-right">
+            <div class="showcase__features" data-aos="fade-up">
                 <div class="media">
                     <div class="media__image">
                         <svg class="icon icon--primary">
@@ -321,7 +321,7 @@
     </section>
 
 
-    <section class="block container">
+    <section class="block container" data-aos="zoom-in">
         <header class="block__header">
             <h2 class="block__heading">What our Customer are saying</h2>
             <p>
@@ -484,6 +484,11 @@
     </section>
     <script src="js/main.js"></script>
     <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500
+        });
+    </script>
 </body>
 
 </html>
