@@ -138,7 +138,6 @@ a {
 .list {
   list-style-type: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -205,7 +204,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vh;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -298,6 +297,7 @@ a {
   border: none;
   flex-grow: 1;
   padding: 1.5rem 3rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -531,6 +531,13 @@ a {
 }
 
 /* Callouts */
+.callout-container {
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* position: absolute;
+  top: -200px; */
+}
 .callout {
   padding: 4rem;
   border-radius: 10px;
@@ -549,6 +556,7 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
+  color: white;
 }
 
 .callout__content {
@@ -678,8 +686,9 @@ a {
   transition: box-shadow 0.15s;
 }
 
-.nav__logo {
-  width: 100%;
+.nav__brand {
+  width: 150px;
+  height: 30px;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -710,6 +719,9 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
+.hero .block__header {
+  margin-top: 100px;
+}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -737,7 +749,9 @@ a {
 }
 
 /* Domain Block */
-
+.block-domain {
+  padding-bottom: 0;
+}
 .block-domain .input-group {
   box-shadow: 0px 15px 60px 0px rgba(9, 58, 88, 0.15);
   border: 0;
@@ -746,8 +760,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -809,7 +824,7 @@ a {
 }
 .showcase .media {
   font-size: 2rem;
-  margin-bottom: 6.5rem;
+  margin-bottom: 4rem;
 }
 .showcase .media__title {
   color: white;
@@ -818,6 +833,7 @@ a {
 
 /* Footer */
 .footer {
+  position: relative;
   background: #232323;
   padding-bottom: 0;
 }
